@@ -1,0 +1,21 @@
+<RuleCollection Type="Exe">
+  <FilePublisherRule Id="921cc481-6e17-4653-8f75-050b80acca1f" Name="Default Rule to allow Microsoft publisher" Description="Allows members of the Everyone group to run desktop apps that are signed with Microsoft publisher." UserOrGroupSid="S-1-1-0" Action="Allow">
+    <Conditions> 
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+        <BinaryVersionRange LowSection="*" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+  <FilePathRule Id="fd686d83-a829-4351-8ff4-27c7de5755d2" Name="(Default Rule) All files" Description="Allows members of the local Administrators group to run all applications." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+    <Conditions> 
+      <FilePathCondition Path="*" />
+    </Conditions>
+  </FilePathRule>
+  <FilePublisherRule Id="a9416639-9f60-466e-aad4-662b28fdc363" Name="Windows Media Player: MICROSOFT® WINDOWS® OPERATING SYSTEM signed by O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <Conditions>
+      <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="*">
+        <BinaryVersionRange LowSection="12.0.0.0" HighSection="*" />
+      </FilePublisherCondition>
+    </Conditions>
+  </FilePublisherRule>
+</RuleCollection>

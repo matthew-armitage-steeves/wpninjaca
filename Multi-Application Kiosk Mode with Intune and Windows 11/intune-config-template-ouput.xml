@@ -1,0 +1,35 @@
+<AssignedAccessConfiguration xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config">
+  <Profiles>
+    <Profile Id="{f302e3b6-7fa8-4ce5-bb57-62cb41b4012a}">
+      <AllAppsList>
+        <AllowedApps>
+          <App AppUserModelId="Microsoft.KioskBrowser_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.ScreenSketch_8wekyb3d8bbwe!App" rs5:AutoLaunch="true" />
+        </AllowedApps>
+      </AllAppsList>
+      <rs5:FileExplorerNamespaceRestrictions>
+        <rs5:AllowedNamespace Name="Downloads" />
+      </rs5:FileExplorerNamespaceRestrictions>
+      <StartLayout><![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+  <LayoutOptions StartTileGroupCellWidth="6" />
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="6">
+        <start:Group Name="">
+          <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.KioskBrowser_8wekyb3d8bbwe!App" />
+          <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.ScreenSketch_8wekyb3d8bbwe!App" />
+        </start:Group>
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+</LayoutModificationTemplate>]]></StartLayout>
+      <Taskbar ShowTaskbar="true" />
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <AutoLogonAccount />
+      <DefaultProfile Id="{f302e3b6-7fa8-4ce5-bb57-62cb41b4012a}" />
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>

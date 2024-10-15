@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssignedAccessConfiguration xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config" xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" xmlns:v5="http://schemas.microsoft.com/AssignedAccess/2022/config">
+  <Profiles>
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">
+      <AllAppsList>
+        <AllowedApps>
+          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" />
+          <App AppUserModelId="Microsoft.PowerShell_8wekyb3d8bbwe!App" />
+          <App DesktopAppPath="%WINDIR%\System32\cmd.exe" />
+          <App DesktopAppPath="%WINDIR%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
+          <App DesktopAppPath="%WINDIR%\explorer.exe" />
+          <App DesktopAppPath="%SYSTEM32%\MICTRAY64.EXE" />
+          <App DesktopAppPath="%SYSTEM32%\CLEANMGR.EXE" />
+          <App DesktopAppPath="%PROGRAMFILES%\Windows Media Player\wmplayer.exe" />
+          <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+          <App AppUserModelId="%PROGRAMFILES%\Microsoft\Edge\Application\msedge.exe" />
+        </AllowedApps>
+      </AllAppsList>
+      <rs5:FileExplorerNamespaceRestrictions>
+        <rs5:AllowedNamespace Name="Downloads" />
+        <v3:AllowRemovableDrives />
+      </rs5:FileExplorerNamespaceRestrictions>
+      <v5:StartPins><![CDATA[{
+          "pinnedList":[
+            {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
+            {"desktopAppLink": "%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Microsoft Edge.lnk"},
+            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell.lnk"},
+            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\File Explorer.lnk"}
+          ]
+        }]]></v5:StartPins>
+      <Taskbar ShowTaskbar="true" />
+      <v5:TaskbarLayout><![CDATA[
+  <?xml version="1.0" encoding="utf-8"?>
+  <LayoutModificationTemplate
+      xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+      xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+      xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+      xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+      Version="1">
+  <CustomTaskbarLayoutCollection>
+    <defaultlayout:TaskbarLayout>
+    <taskbar:TaskbarPinList>
+        <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+        <taskbar:DesktopApp DesktopApplicationID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+        <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk"/>
+    </taskbar:TaskbarPinList>
+    </defaultlayout:TaskbarLayout>
+  </CustomTaskbarLayoutCollection>
+  </LayoutModificationTemplate>
+  ]]>
+      </v5:TaskbarLayout>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <AutoLogonAccount rs5:DisplayName="Multi App Kiosk" />
+      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}" />
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>

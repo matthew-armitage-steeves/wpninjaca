@@ -1,0 +1,744 @@
+<RuleCollection Type="Exe">
+    <FilePublisherRule Id="921cc481-6e17-4653-8f75-050b80acca1f" Name="Default Rule to allow Microsoft publisher" Description="Allows members of the Everyone group to run desktop apps that are signed with Microsoft publisher." UserOrGroupSid="S-1-1-0" Action="Allow">
+        <Conditions>
+            <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="*">
+                <BinaryVersionRange LowSection="*" HighSection="*" />
+            </FilePublisherCondition>
+        </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="fd686d83-a829-4351-8ff4-27c7de5755d2" Name="(Default Rule) All files" Description="Allows members of the local Administrators group to run all applications." UserOrGroupSid="S-1-5-32-544" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="*" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="A438E39E-6B31-4C1B-B109-3C435BC88EFD" Name="C:\WINDOWS\System32\cmd.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\System32\cmd.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7C9D3FD5-85AC-484A-AD75-74BA18EEBE5A" Name="C:\WINDOWS\System32\WindowsPowerShell\v1.0\Powershell.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\System32\WindowsPowerShell\v1.0\Powershell.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="D5C12383-D785-445F-B910-D02A85E4C5E8" Name="C:\WINDOWS\explorer.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\explorer.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="83D18A04-CBB9-432E-BDC7-E9D26479E9F3" Name="C:\WINDOWS\system32\%SYSTEM32%\MICTRAY64.EXE, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\%SYSTEM32%\MICTRAY64.EXE" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="14D9476A-A248-49D1-A343-895BA6CD045B" Name="C:\WINDOWS\system32\%SYSTEM32%\CLEANMGR.EXE, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Allow">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\%SYSTEM32%\CLEANMGR.EXE" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="E8E74103-F1D5-4A1B-8715-E723A330D36A" Name="C:\WINDOWS\system32\bcdboot.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\bcdboot.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5E0F7A8D-D1BD-41E0-8A90-914525E3113B" Name="C:\WINDOWS\system32\bcdedit.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\bcdedit.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1598D868-8DCC-4C68-B0C3-5BD99063CC0D" Name="C:\WINDOWS\system32\change.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\change.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="02DD5DA4-9D88-4B13-92F4-DA2598F32E98" Name="C:\WINDOWS\system32\changepk.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\changepk.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="E3C6CA8C-0DAF-430D-8E9C-333EC03F96CB" Name="C:\Program Files\internet explorer\iexplore.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\Program Files\internet explorer\iexplore.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7D3F9C39-4D70-4791-83E7-CB5861EC2148" Name="C:\Program Files (x86)\internet explorer\iexplore.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\Program Files (x86)\internet explorer\iexplore.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1F763B87-F81C-4FF3-A304-7F9BFADDB84F" Name="C:\WINDOWS\helppane.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\helppane.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="F537EA0D-41CD-4A8B-AAB9-844BA88649A5" Name="C:\WINDOWS\system32\klist.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\klist.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="C2DD8D82-4C94-41BD-89F9-3FB90C3E169B" Name="C:\WINDOWS\system32\logoff.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\logoff.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7A8C1C95-8ECF-49CD-92A2-8A0B61823B8F" Name="C:\WINDOWS\system32\mdsched.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\mdsched.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="B8C607DB-69B7-44F7-974A-C3992EF793CC" Name="C:\Program Files\Common Files\Microsoft Shared\Ink\mip.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\Program Files\Common Files\Microsoft Shared\Ink\mip.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="F2AB0ED6-75A1-4A0D-9BC6-ACBB6AD317E7" Name="C:\WINDOWS\system32\msconfig.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\msconfig.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="D0F20113-18BA-4F2E-9DF4-A509967E45EF" Name="C:\WINDOWS\system32\msinfo.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\msinfo.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="6B0B1087-0A7F-48F2-8770-498A23334B7B" Name="C:\WINDOWS\notepad.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\notepad.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="09DDDCCF-E1BD-4CBC-A652-42CC4106A62B" Name="C:\WINDOWS\system32\recoverydrive.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\recoverydrive.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="4D4BCF46-DB28-4607-9E83-B3A06E05ACB0" Name="C:\WINDOWS\system32\recdisc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\recdisc.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="0C1E13D4-36D6-4ACF-9BA0-42639658F44B" Name="C:\WINDOWS\regedit.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\regedit.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="96415C7F-1449-4C72-9668-A869C98E3B07" Name="C:\WINDOWS\Speech\Common\sapisvr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\Speech\Common\sapisvr.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="5E9C7AC1-F6E8-43EC-B32A-81473FE46130" Name="C:\WINDOWS\system32\snippingtool.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\snippingtool.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="B20169A3-0ECB-4589-BFCE-A58E37F11029" Name="C:\WINDOWS\system32\wfs.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\wfs.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="563CFA56-5D71-438A-B262-DEE6ABDDEEB2" Name="C:\WINDOWS\write.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\write.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="C5EFF916-B4B4-403B-87D9-7DEFAC1D1397" Name="C:\Program Files\Windows Media Player\wmplayer.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\Program Files\Windows Media Player\wmplayer.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="AA0109B2-8440-4428-9560-F6EFECFD0906" Name="C:\Program Files (x86)\Windows Media Player\wmplayer.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\Program Files (x86)\Windows Media Player\wmplayer.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="067A7C57-BCDF-42AA-B615-B8B376ADE1FA" Name="C:\Program Files\Windows NT\Accessories\wordpad.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\Program Files\Windows NT\Accessories\wordpad.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="FA226F0E-31FA-4677-9EF4-4BBAD7FE995D" Name="C:\Program Files (x86)\Windows NT\Accessories\wordpad.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\Program Files (x86)\Windows NT\Accessories\wordpad.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="3F6073F4-7699-4511-8D63-6265683B41A9" Name="C:\WINDOWS\system32\%ProgramFiles(Arm)%\Windows NT\Accessories\wordpad.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\%ProgramFiles(Arm)%\Windows NT\Accessories\wordpad.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1C206AB6-EAA7-4E45-838E-02AA2AAF484F" Name="C:\WINDOWS\system32\xpsrchvw.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\system32\xpsrchvw.exe" />
+        </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1F0FF259-C99D-406F-B244-CA3BB35B06C1" Name="C:\WINDOWS\winsxs\*\bcdboot.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\bcdboot.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="D9FE6E80-B077-40F7-A2D3-4A0FD9A1EBE9" Name="C:\WINDOWS\winsxs\*\bcdedit.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\bcdedit.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="C0E645E3-FBEC-48C0-AA19-59054021A950" Name="C:\WINDOWS\*\cacls.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\cacls.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="A4F64EEF-4EAA-44DA-B3E4-A320B4A0DB54" Name="C:\WINDOWS\winsxs\*\cacls.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\cacls.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="BD9ADAB4-A09B-451A-A829-91D62F1D13AE" Name="C:\WINDOWS\*\calc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\calc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="5E112D26-096F-4CFA-81B1-24A509E538CF" Name="C:\WINDOWS\winsxs\*\calc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\calc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="169775D8-E135-4023-92C4-740E7A40868D" Name="C:\WINDOWS\winsxs\*\change.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\change.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="BDF3AAA4-7683-47A9-A79D-D881C74EA3F0" Name="C:\WINDOWS\winsxs\*\changepk.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\changepk.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="4CA63820-0BE9-4F5E-ADA7-3BC58DA4F04D" Name="C:\WINDOWS\*\charmap.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\charmap.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="89652137-46B8-4820-8F63-074A15822248" Name="C:\WINDOWS\winsxs\*\charmap.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\charmap.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="3F29C4D0-3D24-4AA5-BF65-A7013FCDC0E2" Name="C:\WINDOWS\*\chkdsk.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\chkdsk.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="F65969AA-54BC-4437-A31A-8E249F3C2A57" Name="C:\WINDOWS\winsxs\*\chkdsk.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\chkdsk.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="2B828040-D88B-41C4-93B9-85EA7891621A" Name="C:\WINDOWS\*\cleanmgr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\cleanmgr.exe" />
+        </Conditions>
+        <Exceptions>
+            <FilePathCondition Path="C:\WINDOWS\system32\%SYSTEM32%\CLEANMGR.EXE" />
+        </Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="591DEDBB-8A75-4657-A723-CF617FB66A74" Name="C:\WINDOWS\winsxs\*\cleanmgr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\cleanmgr.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="9C8CA081-557C-4134-B12B-D59B835333F9" Name="C:\WINDOWS\*\cmd.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\cmd.exe" />
+        </Conditions>
+        <Exceptions>
+            <FilePathCondition Path="C:\WINDOWS\System32\cmd.exe" />
+        </Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="69573EA3-FBCF-4F20-8358-BA7B921889BA" Name="C:\WINDOWS\winsxs\*\cmd.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\cmd.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="E7A8F89E-97AE-4A3F-8467-5EFA706E360A" Name="C:\WINDOWS\*\cmdkey.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\cmdkey.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="A056108E-860C-4567-8587-790B6A26260F" Name="C:\WINDOWS\winsxs\*\cmdkey.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\cmdkey.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="58112CA1-5D84-468D-B23F-892758D13188" Name="C:\WINDOWS\*\control.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\control.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="2ABEBE5F-E738-46E6-8157-8067261578EE" Name="C:\WINDOWS\winsxs\*\control.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\control.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="A45500F8-CA30-4159-8595-680384A7945D" Name="C:\WINDOWS\*\cscript.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\cscript.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="13A7A285-4CA5-4776-B48B-52E6FA0A8CF4" Name="C:\WINDOWS\winsxs\*\cscript.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\cscript.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="22DF5BF6-2528-4DAD-ACAF-46E620E1D2D0" Name="C:\WINDOWS\*\dialer.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\dialer.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="A0FCE714-10E8-4DFE-AAE9-A9C2AF30E351" Name="C:\WINDOWS\winsxs\*\dialer.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\dialer.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="6C98917E-4203-40A9-9DE3-D791D6985E4E" Name="C:\WINDOWS\*\doskey.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\doskey.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="D3D9166C-4E72-4433-9020-D21F2C5825A3" Name="C:\WINDOWS\winsxs\*\doskey.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\doskey.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="53AE431B-D493-45C0-BCFA-F6A18A0734F8" Name="C:\WINDOWS\*\dfrgui.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\dfrgui.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="8C4B5A88-5A4E-4A64-AD99-2EC3478374E1" Name="C:\WINDOWS\winsxs\*\dfrgui.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\dfrgui.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="284F379C-4EBB-4C24-B687-012AA3B1A64D" Name="C:\WINDOWS\*\icacls.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\icacls.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="6694BCD5-9839-40B7-9CD4-19BFCFC6E874" Name="C:\WINDOWS\winsxs\*\icacls.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\icacls.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="F2AF8C53-3129-4934-AF48-743E6641124A" Name="C:\WINDOWS\winsxs\*\iexplore.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\iexplore.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="4B11E4BC-962F-4BF8-9FB1-F7EDC6648434" Name="C:\WINDOWS\*\iscsicpl.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\iscsicpl.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="6FE1029C-9CCE-403C-807F-289623015A92" Name="C:\WINDOWS\winsxs\*\iscsicpl.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\iscsicpl.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="8FBA7995-F6D3-49A7-9980-ABE538338186" Name="C:\WINDOWS\*\fc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\fc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="FF831E43-83F1-47D4-93E5-F0F05F3C93DC" Name="C:\WINDOWS\winsxs\*\fc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\fc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="53D6AD0A-C10F-42DB-9CD9-029F23CF3545" Name="C:\WINDOWS\*\find.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\find.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="BB4D7FBD-5017-488F-9367-1A33C9A24293" Name="C:\WINDOWS\winsxs\*\find.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\find.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="63576928-0E67-4E8E-941B-5DD87709B85C" Name="C:\WINDOWS\*\findstr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\findstr.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="7A151F32-393E-417B-925B-2EA3F5E0561B" Name="C:\WINDOWS\winsxs\*\findstr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\findstr.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="4B744D90-DA5D-4D4C-B694-E90774709B01" Name="C:\WINDOWS\winsxs\*\helppane.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\helppane.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="9A5FBC3D-0908-4EB4-849A-CED54B27FDEC" Name="C:\WINDOWS\winsxs\*\klist.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\klist.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="C57FAD76-498C-411E-97F4-C6D25C48EEF5" Name="C:\WINDOWS\winsxs\*\logoff.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\logoff.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="B579B14E-3BEE-416E-890B-17ED6946B35C" Name="C:\WINDOWS\winsxs\*\mdsched.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\mdsched.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="F555DB02-7CC8-4925-8F9C-39871D04A9FD" Name="C:\WINDOWS\winsxs\*\mip.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\mip.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="FF7256E3-5469-4B0E-8CA6-EF730265127A" Name="C:\WINDOWS\*\mmc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\mmc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="A0A3CAFD-6BA3-4EAD-9672-2E04BA043412" Name="C:\WINDOWS\winsxs\*\mmc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\mmc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="995E969A-E178-4A00-800C-D7A52DAF6BF4" Name="C:\WINDOWS\winsxs\*\msconfig.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\msconfig.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="06B69167-C705-487A-B045-511A6F3C0E22" Name="C:\WINDOWS\*\mspaint.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\mspaint.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="FFA45C44-1210-4391-9DB4-59C6C80F6602" Name="C:\WINDOWS\winsxs\*\mspaint.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\mspaint.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="C3BC2ED6-C2DE-48C0-95C4-34E30E8E0CFA" Name="C:\WINDOWS\*\mstsc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\mstsc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="5C063DD1-2A06-40CA-9B33-EECDE46DC1E3" Name="C:\WINDOWS\winsxs\*\mstsc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\mstsc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="25AC0F0A-234B-405F-AC44-DBD49B1F5C7A" Name="C:\WINDOWS\*\net.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\net.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="48CBC044-3B13-4899-B714-FC256E80B782" Name="C:\WINDOWS\winsxs\*\net.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\net.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="0DAB9921-19D2-41DB-88E2-3B9835D98869" Name="C:\WINDOWS\*\net1.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\net1.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="9E832F86-8BBC-4DD7-BBDE-548499C2C5ED" Name="C:\WINDOWS\winsxs\*\net1.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\net1.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="59815C4B-28C9-42A3-8FA4-6389070D1E31" Name="C:\WINDOWS\*\notepad.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\notepad.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="3610D1FD-C890-48A2-80C0-B1A7A66A27CE" Name="C:\WINDOWS\winsxs\*\notepad.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\notepad.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="576AF011-1B08-405A-95C0-C953CAC4BAE9" Name="C:\WINDOWS\*\odbcad32.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\odbcad32.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="4EC18A24-D03C-456D-AC79-19C94C70E634" Name="C:\WINDOWS\winsxs\*\odbcad32.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\odbcad32.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="D9FEA105-CDDB-4F58-BFD4-14754E701871" Name="C:\WINDOWS\*\windowspowershell\v1.0\powershell*.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\windowspowershell\v1.0\powershell*.exe" />
+        </Conditions>
+        <Exceptions>
+            <FilePathCondition Path="C:\WINDOWS\System32\WindowsPowerShell\v1.0\Powershell.exe" />
+        </Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="0794028F-B4FD-484F-B6BA-02B32E54530C" Name="C:\WINDOWS\winsxs\*\powershell*.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\powershell*.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="5FA58AAE-EAD3-4600-984B-9725B23E333A" Name="C:\WINDOWS\*\perfmon.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\perfmon.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="C769B63D-6A3B-495D-9F82-82700ABB3F5F" Name="C:\WINDOWS\winsxs\*\perfmon.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\perfmon.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="EE089596-D822-4939-94E2-5B3074E947C6" Name="C:\WINDOWS\*\psr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\psr.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="4DD454A3-77D4-49B4-BE49-60C106E65229" Name="C:\WINDOWS\winsxs\*\psr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\psr.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="947DA1BC-1D52-405C-AA43-AE8220552679" Name="C:\WINDOWS\*\quickassist.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\quickassist.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="57907740-A92F-4BA2-BCCF-CAEED2A139B9" Name="C:\WINDOWS\winsxs\*\quickassist.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\quickassist.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="A7751CFC-498C-4F55-AF80-BF6CA9366F3C" Name="C:\WINDOWS\winsxs\*\recoverydrive.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\recoverydrive.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="AD0F3509-6AF0-4410-8BB2-F37ABBEED7BE" Name="C:\WINDOWS\winsxs\*\recdisc.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\recdisc.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="C4A4D17A-889E-42FF-BEC8-20FD6EF00E99" Name="C:\WINDOWS\*\reg.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\reg.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="BEFBC32B-C77B-438E-9013-A71E4A0408A1" Name="C:\WINDOWS\winsxs\*\reg.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\reg.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="7C2031B3-1A87-4638-ABBA-0EDDF7C69444" Name="C:\WINDOWS\*\regedit.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\regedit.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="2C144FA5-044B-4F6D-A823-9D101F5F2895" Name="C:\WINDOWS\winsxs\*\regedit.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\regedit.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="76A434D3-5B65-4EC0-B8AB-A18C1344A292" Name="C:\WINDOWS\winsxs\*\sapisvr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\sapisvr.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="F1C38E44-217A-41DA-8EF0-824FD5E96B21" Name="C:\WINDOWS\*\shutdown.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\shutdown.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="A413817B-DE6C-4962-A637-32BACB88B045" Name="C:\WINDOWS\winsxs\*\shutdown.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\shutdown.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="1D74AC9D-9C60-4294-9064-EE239DD1B5BC" Name="C:\WINDOWS\winsxs\*\snippingtool.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\snippingtool.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="D83A4C0A-9C91-45BD-84F7-4485D431F34F" Name="C:\WINDOWS\*\takeown.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\takeown.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="491BC6CC-6163-4B34-987F-52307159C664" Name="C:\WINDOWS\winsxs\*\takeown.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\takeown.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="5E7FAFE0-0171-4043-915B-3DE5172B698A" Name="C:\WINDOWS\*\taskkill.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\taskkill.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="FEF9A375-F620-453E-809F-A380C17E683E" Name="C:\WINDOWS\winsxs\*\taskkill.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\taskkill.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="52365580-0244-4DF0-9B9E-3FADD2ADBBD7" Name="C:\WINDOWS\*\tasklist.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\tasklist.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="D5174726-E27B-4D41-804A-2BBE4B52C6A0" Name="C:\WINDOWS\winsxs\*\tasklist.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\tasklist.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="B3D0584D-BA54-47C2-9B61-ED3B277687C2" Name="C:\WINDOWS\*\taskmgr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\taskmgr.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="4D6AAE34-4399-4C17-811C-F78E7207BB84" Name="C:\WINDOWS\winsxs\*\taskmgr.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\taskmgr.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="E514FBD0-F302-4A0C-A1C1-8CFE60EE1418" Name="C:\WINDOWS\winsxs\*\wfs.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\wfs.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="F3E78EF7-C4E0-4A2A-93F9-7FFB9E9C304F" Name="C:\WINDOWS\*\where.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\where.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="2C929BCB-8630-4167-9342-5E65E27B0268" Name="C:\WINDOWS\winsxs\*\where.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\where.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="F19E1746-2C5D-4DF2-9DD8-694C7F40254D" Name="C:\WINDOWS\*\write.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\write.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="F9199DC2-EAAC-4A1C-A7F7-8F42AC221E3E" Name="C:\WINDOWS\winsxs\*\write.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\write.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="0DE656C2-D34E-451E-B618-DA0B0F86C145" Name="C:\WINDOWS\winsxs\*\wmplayer.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\wmplayer.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="C2E185D3-DE32-44A5-B78F-5057DC639C30" Name="C:\WINDOWS\winsxs\*\wordpad.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\wordpad.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="CAD3CE90-2560-4A16-8662-1A69C3B6C9E8" Name="C:\WINDOWS\*\xcopy.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\*\xcopy.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+    <FilePathRule Id="B5304884-16B5-46E1-81BE-22D3F5879389" Name="C:\WINDOWS\winsxs\*\xcopy.exe, by AssignedAccess" Description="" UserOrGroupSid="S-1-5-21-2967070492-227201580-1908102360-1003" Action="Deny">
+        <Conditions>
+            <FilePathCondition Path="C:\WINDOWS\winsxs\*\xcopy.exe" />
+        </Conditions>
+        <Exceptions></Exceptions>
+    </FilePathRule>
+</RuleCollection>
